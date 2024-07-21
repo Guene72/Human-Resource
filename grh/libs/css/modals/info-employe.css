@@ -1,0 +1,153 @@
+.modal[name="info-employe"] .box .entete{
+    top: 0;
+    left: 0;  
+    display: flex;
+    justify-content: space-between;
+    /* background-color: var(--color-blue-normal-1); */
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    padding: 5px 10px;
+    position: absolute;
+   color: var(--color-blue-normal-1);
+   border-radius: 10px;
+}
+.modal[name="info-employe"] .box{
+    gap: 5px;
+    padding: 10px;
+    padding-top: 35px;
+}
+ .cont1 .titre{
+    color: var(--color-blue-light-2);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;   
+}
+.cont1 .join{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    flex-direction: row;
+}
+.cont1 .result{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: right;
+    color: var(--color-blue-normal-1);
+}
+.convention{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 3px;
+    width: 100%;
+    position: relative;
+    transition: height 0.1s ease-in-out;
+    padding: 2px 5px;
+    overflow: hidden;
+}
+.convention[show]{
+    height: 19px;
+}
+.convention table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+.convention table tr{
+    height: 20px;
+}
+.convention .table{
+    background-color: var(--color-blue-light-3);
+    border-radius: 10px;
+}
+.convention table th{
+    padding: 0 5px;
+    color: var(--color-blue-light-2); 
+}
+.convention table tbody td{
+     text-wrap: nowrap;
+    overflow: hidden;
+    padding: 0 5px;
+    text-overflow: ellipsis;
+    color: var(--color-blue-normal-1);
+    max-width: 90px;  
+}
+.convention table tbody td img{
+    height: 55px;
+    cursor: pointer;
+}
+.convention .conv tbody td{
+    text-wrap: wrap;
+    /* text-align: center; */
+}
+.convention .titr{
+    position: relative;
+    color: var(--color-blue-light-2);
+    cursor: pointer;
+}
+.convention .titr::after{
+    content: '\f00c';
+    position: absolute;
+    font-family: 'Font Awesome 6 Pro';
+    right: 0;
+    line-height: normal;  
+}
+/* .convention[show] .titr::after{
+  transform: rotate(360deg); 
+} */
+.join .result[statut="fonction"] p:first-child{
+   border: 2px solid rgb(135, 223, 135);
+   color: rgb(135, 223, 135);  
+    height: 20px;
+    line-height: 15px;
+    text-align: center;
+    box-shadow: 0 0 2px;
+   border-radius: 10px;
+   padding: 0 3px;
+}
+.join .result[statut="x"] p:first-child{
+    border: 2px solid rgb(245, 169, 169);
+    color: rgb(245, 169, 169); 
+    box-shadow: 0 0 2px; 
+    /* text-shadow: 0 0 1px; */
+     height: 20px;
+     line-height: 15px;
+     text-align: center;
+    border-radius: 10px;
+    padding: 0 3px;
+ }
+ .join .result p:first-child{     
+    color: #adbbe7; 
+    color: var(--color-blue-normal-1);
+    /* color: var(--color-blue-black); */
+    text-shadow: 0 0 1px;
+ }
+ 
+ .join .result[statut="await"] p:last-child{
+    border: 2px solid;
+    color: #adbbe7; 
+    box-shadow: 0 0 3px; 
+     height: 20px;
+     line-height: 15px;
+     text-align: center;
+    border-radius: 10px;
+    width: 100px;
+    padding: 0 0 2px;
+ }
+ .join .result[statut="validate"] p:last-child{
+    border: 2px solid ;
+    color: rgb(135, 223, 135); 
+    box-shadow: 0 0 3px; 
+     height: 20px;
+     line-height: 15px;
+     text-align: center;
+    border-radius: 10px;
+    width: 100px;
+    padding: 0 0 2px;
+ }
+ /* .cont1 .btn-save button{
+   background-color: var(--color-blue-light-3) !important;
+ } */
