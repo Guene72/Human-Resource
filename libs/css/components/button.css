@@ -1,0 +1,155 @@
+/* 
+    Composant de base -> Bouton
+    ---
+    Gestion RH
+    © 2024 E2JS SA
+ */
+
+ /* UI-BTN-1 */
+.ui-btn[theme='alpha']{
+   height: 35px;
+   min-width: 35px;
+   border-radius: 10px;
+   padding: 0 10px;
+   outline: 2px solid transparent;
+   position: relative;
+   top: 0;
+   cursor: pointer;
+   transition: outline .3s ease-in-out, color .3s ease-in-out, background .3s ease-in-out;
+}
+.ui-btn[theme='alpha']:active{
+   top: 1px;
+}
+.ui-btn[theme='alpha']:disabled{
+   outline: none !important;
+   background-color: transparent !important;
+   color: var(--color-blue-normal-1) !important;
+   top: 0 !important;
+   cursor: not-allowed;
+}
+.ui-btn[theme='alpha'][color='blue']{
+   background-color: var(--color-blue-light-1);
+   color: var(--color-blue-normal-1);
+}
+.ui-btn[theme='alpha'][color='blue']:focus,
+.ui-btn[theme='alpha'][color='blue']:hover{
+   outline-color: var(--color-blue-light-3);
+   background-color: var(--color-blue-normal-1);
+   color: var(--color-white)
+}
+.ui-btn[theme='alpha'][color='red']{
+   background-color: var(--color-red-light);
+   color: var(--color-red-black);
+}
+.ui-btn[theme='alpha'][color='red']:focus,
+.ui-btn[theme='alpha'][color='red']:hover{
+   outline-color: var(--color-red-normal);
+   background-color: var(--color-red-black);
+   color: var(--color-white)
+}
+.ui-btn[theme='alpha'][menu]{
+   color: var(--color-white);
+   background-color: var(--color-blue-normal-1);
+   text-align: left;
+}
+.ui-btn[theme='alpha'][add]{
+   color: #1c274c91;
+   background-color: var(--color-blue-light-3);
+   border: 2px solid #1c274c91;
+   text-align: center;
+    /* background-color: var(--color-blue-black); */
+}
+/* .ui-btn[theme='alpha'][menu][color='blue']:focus,
+.ui-btn[theme='alpha'][menu][color='blue']:hover{
+   outline-color: var(--color-blue-light-3);
+   background-color: var(--color-blue-normal-1);
+   color: var(--color-white)
+} */
+/* UI-BTN-2 */
+.option{
+   display: flex;
+   justify-content: center;
+   gap: 1.3rem;
+   align-items: center;
+   /* background-color: aqua; */
+   width: 100%;
+}
+.ui-btn-2[theme='alpha']{
+   height: 40px;
+   width: 110px;
+   border-radius: 10px;
+   padding: 0 10px;
+   outline: 2px solid transparent;
+   position: relative;
+   top: 0;
+   transition: outline .3s ease-in-out, color .3s ease-in-out, background .3s ease-in-out;
+}
+.ui-btn-2[theme='alpha']:active{
+   top: 1px;
+}
+.ui-btn-2[theme='alpha']:disabled{
+   outline: none !important;
+   background-color: transparent !important;
+   color: var(--color-blue-normal-1) !important;
+   top: 0 !important;
+   cursor: not-allowed;
+}
+
+.ui-btn-2[theme='alpha'][color='blue']:focus,
+.ui-btn-2[theme='alpha'][color='blue']:hover{
+   outline-color: var(--color-blue-light-3);
+   background-color: var(--color-blue-normal-1);
+   color: var(--color-white)
+}
+.ui-btn-2[theme='alpha'][color='red']{
+   color: var(--color-red-black);
+}
+.ui-btn-2[theme='alpha'][color='red']:focus,
+.ui-btn-2[theme='alpha'][color='red']:hover{
+   outline-color: var(--color-red-normal);
+   background-color: var(--color-red-black);
+   color: var(--color-white)
+}
+/* logout dashborad */
+#app-left .logout{
+   position: absolute;
+   bottom: 10px;
+   left: 3%;
+   display: flex;
+}
+.button{
+   position: relative;
+   width: 130px;
+   height: 29px;
+   border: 2px solid rgba(128, 128, 128, 0.26);
+   background-color:inherit;
+   border-radius: 20px;
+   transition: 0.5s ease-in-out ;
+
+}
+.button::before{
+content: '\f090';
+position: absolute;
+font-family:'Font Awesome 6 Pro';
+width: 65px;
+text-align: center;
+line-height: 25px;
+color: var(--color-blue-light-2);
+height: 25px;
+border-radius: 20px;
+background-color:#dee1ec8c;
+transition: 0.5s ease-in-out ;
+
+
+}
+.logout input:checked+ .button{
+   background-color:var(--color-blue-normal-1);
+}
+.logout input:checked+ .button::before{
+   content: '\f08b';
+   transform: translateX(61px);
+   transition:transform 0.5s ease-in-out ;
+}
+.logout input{
+   display: none;
+}

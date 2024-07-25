@@ -1,0 +1,12 @@
+/* 
+    Styles des composants simples
+    ---
+    Gestion RH
+    © 2024 E2JS SA
+ */
+
+ /* Imporation des dependances */
+ @import url('components/input.css');
+ @import url('components/button.css');
+
+ 

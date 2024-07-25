@@ -1,0 +1,119 @@
+.modal[name="users"]{
+    background-color: var(--color-white) !important;
+    background-image: url('../../img/back-repeat.png') !important;
+}
+.modal[name="users"] .conts{
+    min-width: 305px;
+    padding: 10px;
+    max-width: 900px;
+    padding: 5px;
+    gap: 35px;
+    
+}
+.conts[deux]{
+    align-items:flex-start ;
+    gap: 10px !important;   
+}
+.conts[none]{
+    align-items:center ;
+    justify-content: center; 
+}
+.conts[none] span{
+   color: #c0bdbda6; 
+}
+.modal[name="users"] .box{
+    gap: 5px;
+    
+}
+.modal[name="users"] .box .form-title::before{
+    background-image: url('../../img/favicon.png') !important;
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: -40px;
+}
+.modal[name="users"] .box .second{
+    background-color: var(--color-blue-light-1);
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding:10px 10px!important;
+}
+.modal[name="users"]  .conts .logo{
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+.modal[name="users"] .box .second .un{
+    color: var(--color-blue-normal-1);
+    display: flex;
+    align-items: center;
+    text-align: left; 
+    gap: 2px;
+     background-color: var(--color-blue-light-3);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.box .second .deux{
+    justify-content: center;
+    display: flex;
+}
+
+.modal[name="users"] .box .second img{
+     border-radius: 10px;
+     box-shadow: 0 0 5px;
+    height: 70px;
+}
+
+.modal[name="users"] .box .form-title{
+    top: 40px;
+    padding-top: 40px;
+    font-size: 15px;
+}
+
+.modal[name="users"] .conts .btns{
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+.modal[name="users"]  .conts .titles{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.modal[name="users"]  .conts .titles span{
+    color:var(--color-blue-normal-1) ;
+    /* text-decoration: underline; */
+}
+.modal[name="users"] .cont1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    
+}
+.modal[name="users"] .all{
+   /* background-color: var(--color-white); */
+   min-width: 300px;
+   width: 100% !important;
+   border-radius: 10px;
+
+}
+.modal[name="users"] .join{
+    /* background-color: var(--color-white); */
+    
+    border-radius: 10px;
+    background-color: var(--color-white);
+ }
+ .modal[name="users"] .convention{
+    border-radius: 10px;
+    background-color: var(--color-white);
+ }
+ .modal[name="users"] .only{
+    background-color: var(--color-white);
+ }
+
